@@ -109,12 +109,11 @@ const hoverHandle = throttle(function (target) {
   getBVATag(target).forEach((v) => getDataAndSetEvent(v));
 }, 1000);
 
-// 冲鸭
-window.addEventListener("DOMContentLoaded", function () {
+(function () {
   log("脚本启动");
   document
     .querySelector("#comment")
     .addEventListener("mouseover", async ({ target }) => {
       hoverHandle(target);
     });
-});
+})();
