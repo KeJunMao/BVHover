@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         BVHover
 // @namespace    http://tampermonkey.net/
-// @version      0.1
+// @version      0.2
 // @description  B站视频评论区BV信息显示
 // @author       KeJun
 // @include      *://www.bilibili.com/video/BV*
