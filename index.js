@@ -64,6 +64,7 @@ async function getDataAndSetEvent(ele) {
     imageEl.style.width = boxEl.style.width = "160px";
     imageEl.style.height = "90px";
     titleEl.innerText = title;
+    boxEl.style.margin = "5px 0 ";
     boxEl.append(titleEl, imageEl);
     ele.instance.setContent(boxEl);
     let PX = new Array(10)
@@ -113,6 +114,11 @@ const hoverHandle = throttle(function (target) {
   log("脚本启动");
   document
     .querySelector("#comment")
+    .addEventListener("mouseover", async ({ target }) => {
+      hoverHandle(target);
+    });
+  document
+    .querySelector("#v_desc")
     .addEventListener("mouseover", async ({ target }) => {
       hoverHandle(target);
     });
